@@ -1,0 +1,318 @@
+/*Converted all px measurements to either em or percentile*/
+
+body {
+    background-color: #35212A
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    margin-top: .5em;
+    text-align: center;
+}
+
+nav {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Converted nav bar into unordered list and style*/
+nav ul {
+    padding: 0;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+/* Makes list into buttons */
+nav li {
+    background-color: #FFDEF3;
+    border-radius: 2em;
+    list-style-type: none;
+    margin: .3em;
+    margin-bottom: .8em;
+    padding: .4em;
+    box-shadow: .3em .3em .3em #FF61BE;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Hides certain styles in different viewports */
+.mobile {
+    display: inline;
+}
+
+.desktop {
+    display: none;
+}
+
+.desktop_text {
+    display: none;
+}
+
+.pics {
+    display: none;
+}
+/*Rounds banner picture */
+#banner {
+    border-radius: 1em;
+}
+
+main {
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: .5em;
+    padding: 1em;
+    border-radius: .8em;
+    background-color: #FFDEF3;
+    box-shadow: .5em .5em .5em #FF61BE;
+}
+
+p a {
+    text-decoration: underline;
+    color: #3B55CE;
+}
+
+a:hover, a:active{
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #3B55CE;
+}
+
+footer {
+    background-color: #FFDEF3;
+    font-size: .8em;
+    text-align: center;
+    margin-top: 1.5em;
+    border-radius: 1em;
+    padding: .5em;
+}
+
+footer a{
+    text-decoration: underline;
+    color: #3B55CE;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    padding: 1px;
+}
+
+
+hr {
+    border-top: 5px solid #3B55CE;
+    border-radius: 5px;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+}
+
+.ada {
+    list-style-type: none;
+    text-align: center;
+}
+
+.ada li {
+    display: inline;
+    padding: 0.5em;
+}
+
+.ada li a {
+    color: white;
+    text-decoration: none;
+}
+
+.ada li a:hover {
+    text-decoration: underline;
+}
+
+/*Media query for tablet styles*/
+@media only screen and (min-width: 660px) {
+    /* Turns nav into lateral buttons */
+
+    nav li {
+        display: inline-block;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: .4em;
+        padding-right: .4em;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    main {
+        clear: left;
+        margin-top: 1em;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .desktop_text {
+        display: inline;
+    }
+    /* Reveals pics and adds padding to them. Reduces size to make images equal in size */
+    .pics {
+        display: inline;
+        float: left;
+        padding-right: 1em;
+        padding-bottom: 2em;
+        width: 40%;
+    }
+    /* Adds clear to prevent overflow of pictures */
+    .clear {
+        clear: both;
+    }
+
+    /*Adds rows and columns to index page*/
+    .column {
+        text-align: center;
+        float: left;
+        width: 30.00%;
+        padding: .5em;
+    }
+    
+    .row {
+        content: "";
+        clear: both;
+        display: table;
+        padding-left: 7%;
+    }
+
+    .column_2 {
+        text-align: center;
+        float: left;
+        width: 45%;
+        padding: .5em;
+    }
+
+    .row_2 {
+        content: "";
+        clear: both;
+        display: table;
+        padding-left: 3%;
+    }
+
+    table, th, td {
+        border: solid 0.1em #35212A;
+        border-collapse: collapse;
+        padding: .2em;
+        font-size: 1em;
+    }
+
+    table {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+
+    caption {
+        font-size: 1.5em;
+        padding-bottom: 1em;
+        padding-top: .5em;
+    }
+
+    .video {
+        padding: 1em;
+        text-align: center;
+    }
+
+    video {
+        border: 0.5em solid black;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .bottom_pad {
+        padding-bottom: 0;
+    }
+
+    .audio {
+        text-align: center;
+    }
+
+@media only screen and (min-width: 830px) {
+
+    #container {
+        width: 80%;
+    }
+
+    nav {
+        width: 100%;
+    }
+    
+    /* Turns nav into a lateral bar without buttons */
+    nav ul {
+        padding-left: 0.1%;
+        padding-right: 0.1%;
+        text-align: center;
+        position: relative;
+        background-color: #FFDEF3;
+        border-top: .2em solid #FF61BE;
+        border-bottom: .2em solid #FF61BE;
+        border-radius: 2em;
+    }
+
+    nav li {
+        display: inline-block;
+        float: none;
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: .4em;
+        padding-right: .4em;
+        width: auto;
+        white-space: nowrap;
+        box-shadow: none;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+
+
+    table {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+
+    nav li a:hover {
+        font-size: larger;
+    }
+
+}
+
+}
