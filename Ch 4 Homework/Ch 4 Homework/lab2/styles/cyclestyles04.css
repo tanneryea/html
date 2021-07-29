@@ -1,0 +1,30 @@
+/*Tanner Yea, 02/06/20*/
+
+body {
+    color: black;
+    font-family: Calibri, sans-serif;
+    background-color: #FF9900;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.floatleft {
+    float: left;
+    margin-right: 2%;
+}
+
+.floatright {
+    float: right;
+    margin-left: 2%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.boldtext, dt {
+    font-weight: bold;
+}
